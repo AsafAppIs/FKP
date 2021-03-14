@@ -27,6 +27,8 @@ np.random.seed(random_seed)
 
 general_path = "C:/Users/User/Documents/Asaf/fkp/"
 data_path = "C:/Users/User/Documents/Asaf/fkp/data/"
+general_path = "C:/Users/User/Documents/asaf/Finger Kinematic analysis/"
+data_path = "C:/Users/User/Documents/asaf/Finger Kinematic analysis/data/"
 model_path = "C:/Users/User/Documents/Asaf/fkp/results/models/"
 performance_path = "C:/Users/User/Documents/Asaf/fkp/results/performence/"
 augmentation_path = "C:/Users/User/Documents/Asaf/fkp/augmented_data/"

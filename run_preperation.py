@@ -124,7 +124,7 @@ def subjects_data_split(X, Y, Z, proporions=[0.7, 0.9]):
   return train_dataset, validation_dataset, test_dataset
 
 
-def data_preperation(num_of_subject, proprtions=[0.7, 0.9], cross_subject=True, down=False): 
+def data_preperation(num_of_subject=-1, proprtions=[0.7, 0.9], cross_subject=True, down=True): 
   pseudo_random(configurations.random_seed)
   X, Y, Z = load_data(import_model_data, num_of_subject, label_type=1, concat=cross_subject)
   

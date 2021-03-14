@@ -116,13 +116,6 @@ def training(model, train_dataset, val_dataset, optim="SGD", num_of_epochs=1000,
       
       #compute total correct answers in train
       train_correct_counter += count
-      if (i+1)%(int(number_of_train_batches / 10)) == 0 and False:
-          val, val_rate = val_eval(model, val_dataset, loss_fn)
-          print(f"part number {round((i+1)/(number_of_train_batches / 10))} of epoch {epoch}: ")
-          print(f"train loss is: {(total_loss/(i+1)):.4f} and train rate is {(train_correct_counter/(configurations.batch_size * (i+1))):.4f}")
-          print(f"val loss is: {val:.4f} and val rate is {val_rate:.4f}")
-          print()
-      
       
     
     #compute the mean loss
